@@ -1,4 +1,4 @@
-# Title
+## ADR-0004: API Gateway as a microservice architecture decision
 
 Date: `2023-12-15`
 
@@ -31,7 +31,6 @@ There's a need for a unified point of interaction that simplifies communication 
   Increases complexity in deployment and requires careful management and monitoring.
 
 ## Keywords
-- 
 - API Gateway
 - Microservices
 - Scalability

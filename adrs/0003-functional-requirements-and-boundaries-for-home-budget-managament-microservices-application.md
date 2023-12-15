@@ -1,4 +1,3 @@
-
 # ADR-0003: Functional Requirements and Boundaries for Home Budget Management Microservices Application  
   
 Date: `2023-12-12`  
