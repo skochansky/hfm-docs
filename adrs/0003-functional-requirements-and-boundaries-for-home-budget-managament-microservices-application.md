@@ -5,7 +5,7 @@ Date: `2023-12-12`
   
 ## Status  
   
-In Progress  
+Proposed
   
   
 ## Context  
@@ -21,19 +21,21 @@ Considering the application's scope, we have limited the design to a maximum of 
 1. Transaction Management Service:  
   
 - Boundary: This service handles all operations related to transactions, including tracking expenses and income.  
-Interactions: Communicates with the Budget Analysis and User Account Management services for data synchronization.  
-Budget Analysis Service:  
-  
-Boundary: Responsible for analyzing spending patterns, generating monthly and yearly summaries, and providing budget recommendations.  
-Interactions: Uses data from the Transaction Management Service and interfaces with the User Notification Service for alerts.  
-User Account Management Service:  
-  
-Boundary: Manages user accounts, authentication, and authorization.  
-Interactions: Integrates with all other services for user verification and data access control.  
-User Notification Service:  
-  
-Boundary: Handles sending notifications and alerts to users based on their budget and transaction activities.  
-Interactions: Works with the Budget Analysis Service to send relevant budget alerts and notifications.  
+- Interactions: Communicates with the Budget Analysis and User Account Management services for data synchronization.
+
+2. Budget Analysis Service:
+- Boundary: Responsible for analyzing spending patterns, generating monthly and yearly summaries, and providing budget recommendations.  
+- Interactions: Uses data from the Transaction Management Service and interfaces with the User Notification Service for alerts.  
+
+
+3. User Account Management Service:
+- Boundary: Manages user accounts, authentication, and authorization.  
+- Interactions: Integrates with all other services for user verification and data access control.  
+
+4. User Notification Service:
+- Boundary: Handles sending notifications and alerts to users based on their budget and transaction activities.  
+- Interactions: Works with the Budget Analysis Service to send relevant budget alerts and notifications.  
+
 ## Consequences  
   
 Increased Overhead: Managing multiple repositories can lead to increased administrative overhead, including repository setup, access control, and dependency management.  
